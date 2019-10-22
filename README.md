@@ -73,6 +73,16 @@ instanceVar;
 new Parent().instanceVar;
 new Child().instanceVar;
 ```
+
+**Dynamic Binding**
+
+When parent and child class have same method name and overriding exist - Dynamic biding happens and parent reference type has object of child class will access child method.
+
+If parent method is throwing checked exception, child method is runtime or no exception, in case of overriding or dynamic binding, compilation error as parent object at compile time think about parent method which is having checked exception so should be handled.
+```
+ Parent ptoC = new Child();
+ ptoC.commonM(); //dynamic binding concept - access child method
+ ```
 *************************************** END **************************************************
 
 
