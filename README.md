@@ -129,6 +129,38 @@ Override --> If a method cannot be inherited then it cannot be overridden.
 *Exam Tip : If parent method is throwing checked exception, child method is runtime or no exception, in case of overriding or dynamic binding, compilation error as parent object at compile time think about parent method which is having checked exception so should be handled.*
 
  
+**Exception with Overriding Rules**
+When parent method has :
+
+1) No Exception --> Overriding method can NOT throw checked exception.
+2) Unchecked Exception--> Overriding method can Not throw checked exception.
+3) Checked Exception --> Overriding method can NOT throw new or  broader checked exception
+
+**Overloading**
+
+Overloading --> In Overloading/polymorphism exception can differ. Access modifier can differ. 
+Overloaded methods must have different method parameters from one another.
+Overloaded methods may or may not define a different return type. 
+Overloaded methods may or may not define different access modifiers. 
+
+
+Using the same Method name but with different argument is called overloading.
+
+Constructors can also be overloadedOverloaded Methods must have different argument set.
+
+Overloaded Methods may have different return type.
+
+Overloaded Methods may have different access modifier.
+
+Overloaded Methods may throw different exception broader or narrowno restriction.
+
+Methods from super class can also be overloaded in subclass.
+
+Polymorphism applies to overriding not Overloading.
+
+Determining which overloaded Method will be invoked is decided atcompile time on the basis of the reference type.
+
+Overloaded methods can’t be defined by only changing their return type or access modifiers.
 *************************************** END **************************************************
 
 
