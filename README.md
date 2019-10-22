@@ -2,6 +2,7 @@ Java Concepts
 =====
 
 ********************************************************** START **************************************************
+
 **java certificate note -1- Operator & Precedence**
 
 ![Alt text](/operatorPrecedence.png?raw=true "Optional Title")
