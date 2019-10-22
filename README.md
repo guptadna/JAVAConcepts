@@ -1,8 +1,8 @@
 Java Concepts
 =====
 
-************************************************************************************************************
-*java certificate note -1- Operator & Precedence*
+********************************************************** START **************************************************
+**java certificate note -1- Operator & Precedence**
 
 ![Alt text](/operatorPrecedence.png?raw=true "Optional Title")
 
@@ -35,4 +35,4 @@ int x = (10)%(-3);  --> x is 1,  % goes by numerator sign.
 Integer i ; i++ --> throws runtime exception as NullPointerException;
 Integer i=10; i++ --> 11; */
 
-************************************************************************************************************
+*************************************************** START **********************************************************
