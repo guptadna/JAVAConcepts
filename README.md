@@ -83,6 +83,52 @@ If parent method is throwing checked exception, child method is runtime or no ex
  Parent ptoC = new Child();
  ptoC.commonM(); //dynamic binding concept - access child method
  ```
+ 
+**Casting**
+
+Parent reference type with child object, parent reference type can access only parent method, 
+To enable access to child method, we need to use casting. 
+```
+Parent ptoC = new Child();
+ptoC.parentM();
+((Child) ptoC).childM();   // casting example
+ ```
+ 
+Parent class reference with child class object, to access child methods ( if not overriding ) requires CASTING otherwise compilation error.
+ ```
+ Child ctoP = (Child) new Parent(); INVALID CASTING
+ ```
+**Overriding**
+
+The compiler performs the following checks when you override a nonprivate method:
+
+The method from child class must have the same signature as the method in the parent class.
+
+Access Identifier - Equal or Widening - The method from child class must be at least as accessible or more accessible than the method in the parent class.
+
+The method from child class may not throw a checked exception that is new or broader than the class of any exception thrown from the parent class method.
+
+If the method returns a value, it must be the same or a subclass of the method in the parent class.
+
+Ex : parent method --> Object m(){}; Child method --> String m(){}; --> Correct
+
+Java is not possible to override a private method in a parent class since the parent method is not accessible from the child class.
+
+Java can redeclare a new method in the child class with the same or modified signature as the method in the parent class.
+
+This method in the child class is a separate and independent method, unrelated to the parent version's method.
+
+Override --> Final method cannot be overridden.
+
+Override --> Private method cannot be overridden.
+
+Override --> Static method cannot be overridden. Static method looks to overridden but it is hidden.
+
+Override --> If a method cannot be inherited then it cannot be overridden.
+
+*Exam Tip : If parent method is throwing checked exception, child method is runtime or no exception, in case of overriding or dynamic binding, compilation error as parent object at compile time think about parent method which is having checked exception so should be handled.*
+
+ 
 *************************************** END **************************************************
 
 
