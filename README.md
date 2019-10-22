@@ -37,3 +37,42 @@ Integer i ; i++ --> throws runtime exception as NullPointerException;
 Integer i=10; i++ --> 11; */
 
 *************************************** END **************************************************
+
+*************************************** START **************************************************
+**java certificate note -3- Inheritance/ polymorphism / overloading/ overriding / interface / class - Completed**
+
+**Inheritance**
+```
+
+1) method dynamic binding(runtime) works (if same name methods are defined in parent and child class)
+
+2) dynamic binding does not work with static as static methods are tied to class.
+
+3) static variables are copied from parent to child class so static variables declared in parent class can be accessed using child class name.
+
+4) static methods are NOT copied from parent to child class so static methods declared in parent class can NOT be accessed using child class name. 
+
+5) variable binding will be at compile time.6) final class cannot be extended 
+```
+
+
+**Static Variable in Inheritance**
+
+**Static variable and method declared in Parent class can be accessed:**
+
+```
+staticVar;
+Parent.staticVar;
+Child.staticVar;
+new Parent().staticVar;
+new Child().staticVar;
+```
+**Instance variable and method declared in Parent class can be accessed:**
+```
+instanceVar;
+new Parent().instanceVar;
+new Child().instanceVar;
+```
+*************************************** END **************************************************
+
+
