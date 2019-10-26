@@ -39,6 +39,15 @@ Integer i=10; i++ --> 11; */
 *************************************** END **************************************************
 
 *************************************** START **************************************************
+**java certificate note -2- Exception**
+
+![Alt text](/exceptionHandling.png?raw=true "Optional Title")
+
+
+*************************************** END **************************************************
+
+*************************************** START **************************************************
+
 **java certificate note -3- Inheritance/ polymorphism / overloading/ overriding / interface / class - Completed**
 
 **Inheritance**
